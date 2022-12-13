@@ -1,5 +1,5 @@
 {
-  "name": "rluders/jwtauth",
+  "name": "christoph-efficon/jwtauth",
   "type": "october-plugin",
   "description": "JSON Web Token Authentication plugin for OctoberCMS",
   "keywords": [
@@ -18,6 +18,12 @@
       "name": "Ricardo Lüders",
       "email": "ricardo@luders.com.br",
       "homepage": "http://www.luders.com.br",
+      "role": "Original Author"
+    },
+    {
+      "name": "Christoph Pförtner",
+      "email": "christoph.pfoertner@efficon.eu",
+      "homepage": "https://www.efficon.eu",
       "role": "Developer"
     }
   ],
