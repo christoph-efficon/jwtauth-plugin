@@ -1,8 +1,8 @@
 <?php
 
-namespace RLuders\JWTAuth\Models;
+namespace Efficon\JWTAuth\Models;
 
-use Tymon\JWTAuth\Contracts\JWTSubject;
+use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 use RainLab\User\Models\User as BaseUser;
 
 class User extends BaseUser implements JWTSubject

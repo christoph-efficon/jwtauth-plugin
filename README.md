@@ -3,17 +3,17 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/rluders/oc-jwtauth-plugin">
-    <img src="https://travis-ci.org/rluders/oc-jwtauth-plugin.svg?branch=main">
+  <a href="https://travis-ci.org/efficon/oc-jwtauth-plugin">
+    <img src="https://travis-ci.org/efficon/oc-jwtauth-plugin.svg?branch=main">
   </a>
-  <a href="https://octobercms.com/plugin/rluders-jwtauth">
+  <a href="https://octobercms.com/plugin/efficon-jwtauth">
     <img src="https://img.shields.io/badge/OctoberCMS-Plugin-%23EE7203.svg">
   </a>
-  <a href="https://www.patreon.com/rluders">
+  <a href="https://www.patreon.com/efficon">
     <img src="https://img.shields.io/badge/Support_on-Patreon-green.svg">
   </a>
   <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-    <img src="https://img.shields.io/github/license/rluders/oc-jwtauth-plugin.svg">
+    <img src="https://img.shields.io/github/license/efficon/oc-jwtauth-plugin.svg">
   </a>
 </p>
 
@@ -24,11 +24,11 @@ This plugin provides a JSON Web Tokens authentication mechanism for [OctoberCMS]
 ## Requirements
 
 - [RainLab.User](https://github.com/rainlab/user-plugin) plugin
-- [RLuders.CORS](https://octobercms.com/plugin/rluders-cors) plugin (optional, but recommended)
+- [Efficon.CORS](https://octobercms.com/plugin/efficon-cors) plugin (optional, but recommended)
 
 ## Theme
 
-- [Angular Skeleton](https://octobercms.com/theme/rluders-angular2)
+- [Angular Skeleton](https://octobercms.com/theme/efficon-angular2)
 
 ## Tutorials
 
@@ -36,7 +36,7 @@ This plugin provides a JSON Web Tokens authentication mechanism for [OctoberCMS]
 
 # Installation
 
-Yes, you can install it from the repository (but I'll not provide a documentation for that - in this case I'll assume that you know what you are doing). I strongly recommend that you install it from [product page](https://octobercms.com/plugin/rluders-jwtauth) inside the OctoberCMS Marketplace.
+Yes, you can install it from the repository (but I'll not provide a documentation for that - in this case I'll assume that you know what you are doing). I strongly recommend that you install it from [product page](https://octobercms.com/plugin/efficon-jwtauth) inside the OctoberCMS Marketplace.
 
 # Configuration
 

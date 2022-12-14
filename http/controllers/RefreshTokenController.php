@@ -1,12 +1,12 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Efficon\JWTAuth\Http\Controllers;
 
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Classes\JWTAuth;
-use RLuders\JWTAuth\Http\Requests\TokenRequest;
-use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
+use Efficon\JWTAuth\Classes\JWTAuth;
+use Efficon\JWTAuth\Http\Requests\TokenRequest;
+use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenBlacklistedException;
 
 class RefreshTokenController extends Controller
 {

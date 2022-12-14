@@ -1,5 +1,5 @@
 {
-  "name": "christoph-efficon/jwtauth",
+  "name": "efficon/jwtauth",
   "type": "october-plugin",
   "description": "JSON Web Token Authentication plugin for OctoberCMS",
   "keywords": [
@@ -29,14 +29,14 @@
   ],
   "autoload": {
     "psr-4": {
-      "RLuders\\JWTAuth\\": ""
+      "Efficon\\JWTAuth\\": ""
     }
   },
   "require": {
-    "php": ">=7.0",
+    "php": ">=8.0",
     "composer/installers": "~1.0",
     "rainlab/user-plugin": "~1.0",
-    "tymon/jwt-auth": "~0.5|^1.0"
+     "php-open-source-saver/jwt-auth": "^2.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true

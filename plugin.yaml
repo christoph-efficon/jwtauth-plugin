@@ -1,0 +1,7 @@
+plugin:
+    name: 'efficon.jwtauth::lang.plugin.name'
+    description: 'efficon.jwtauth::lang.plugin.description'
+    author: Christoph Pförtner
+    icon: oc-icon-user-secret
+    homepage: 'https://www.efficon.eu'
+

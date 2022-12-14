@@ -1,8 +1,8 @@
 <?php
 
-namespace RLuders\JWTAuth\Classes;
+namespace Efficon\JWTAuth\Classes;
 
-use Tymon\JWTAuth\JWTAuth as BaseJWTAuth;
+use PHPOpenSourceSaver\JWTAuth\JWTAuth as BaseJWTAuth;
 
 class JWTAuth extends BaseJWTAuth
 {

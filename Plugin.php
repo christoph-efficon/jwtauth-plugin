@@ -1,11 +1,11 @@
 <?php
 
-namespace RLuders\JWTAuth;
+namespace Efficon\JWTAuth;
 
 use Config;
 use System\Classes\PluginBase;
 use System\Classes\SettingsManager;
-use RLuders\JWTAuth\Models\Settings as PluginSettings;
+use Efficon\JWTAuth\Models\Settings as PluginSettings;
 
 /**
  * JWTAuth Plugin Information File.
@@ -19,20 +19,7 @@ class Plugin extends PluginBase
      */
     public $require = ['RainLab.User'];
 
-    /**
-     * Returns information about this plugin.
-     *
-     * @return array
-     */
-    public function pluginDetails()
-    {
-        return [
-            'name'        => 'rluders.jwtauth::lang.plugin.name',
-            'description' => 'rluders.jwtauth::lang.plugin.description',
-            'author'      => 'Ricardo Lüders',
-            'icon'        => 'icon-user-secret',
-        ];
-    }
+   
 
     /**
      * Register the plugin settings
@@ -43,13 +30,13 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label'       => 'rluders.jwtauth::lang.settings.menu_label',
-                'description' => 'rluders.jwtauth::lang.settings.menu_description',
+                'label'       => 'efficon.jwtauth::lang.settings.menu_label',
+                'description' => 'efficon.jwtauth::lang.settings.menu_description',
                 'category'    => SettingsManager::CATEGORY_USERS,
                 'icon'        => 'icon-user-secret',
-                'class'       => 'RLuders\JWTAuth\Models\Settings',
+                'class'       => 'Efficon\JWTAuth\Models\Settings',
                 'order'       => 600,
-                'permissions' => ['rluders.jwtauth.access_settings'],
+                'permissions' => ['efficon.jwtauth.access_settings'],
             ]
         ];
     }
@@ -62,9 +49,9 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'rluders.jwtauth.access_settings' => [
-                'tab' => 'rluders.jwtauth::lang.plugin.name',
-                'label' => 'rluders.jwtauth::lang.permissions.settings'
+            'efficon.jwtauth.access_settings' => [
+                'tab' => 'efficon.jwtauth::lang.plugin.name',
+                'label' => 'efficon.jwtauth::lang.permissions.settings'
             ]
         ];
     }
@@ -76,8 +63,8 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-        $this->app->register(\RLuders\JWTAuth\Providers\AuthServiceProvider::class);
-        $this->app->alias('JWTAuth', \RLuders\JWTAuth\Facades\JWTAuth::class);
+        $this->app->register(\Efficon\JWTAuth\Providers\AuthServiceProvider::class);
+        $this->app->alias('JWTAuth', \Efficon\JWTAuth\Facades\JWTAuth::class);
 
         // Handle error
         $this->app->error(function (\Exception $e) {

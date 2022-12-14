@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Models;
+namespace Efficon\JWTAuth\Models;
 
 use Model;
 
@@ -18,7 +18,7 @@ class Settings extends Model
      *
      * @var string
      */
-    public $settingsCode = 'rluders_jwtauth_settings';
+    public $settingsCode = 'efficon_jwtauth_settings';
 
     /**
      * Settings form

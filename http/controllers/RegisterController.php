@@ -1,18 +1,18 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Efficon\JWTAuth\Http\Controllers;
 
 use Mail;
 use Event;
 use Illuminate\Http\Response;
-use RLuders\JWTAuth\Models\User;
+use Efficon\JWTAuth\Models\User;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Classes\JWTAuth;
-use RLuders\JWTAuth\Models\Settings;
-use RLuders\JWTAuth\Http\Requests\RegisterRequest;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
+use Efficon\JWTAuth\Classes\JWTAuth;
+use Efficon\JWTAuth\Models\Settings;
+use Efficon\JWTAuth\Http\Requests\RegisterRequest;
+use Efficon\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
 use RainLab\User\Models\Settings as RainLabUserSettings;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanSendMail;
+use Efficon\JWTAuth\Http\Controllers\Traits\CanSendMail;
 
 class RegisterController extends Controller
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace RLuders\JWTAuth\Providers;
+namespace Efficon\JWTAuth\Providers;
 
 use Config;
 use Response;
 use RainLab\User\Models\User;
-use Tymon\JWTAuth\Providers\AbstractServiceProvider;
-use RLuders\JWTAuth\Models\Settings as PluginSettings;
-use RLuders\JWTAuth\Exceptions\JsonValidationException;
+use PHPOpenSourceSaver\JWTAuth\Providers\AbstractServiceProvider;
+use Efficon\JWTAuth\Models\Settings as PluginSettings;
+use Efficon\JWTAuth\Exceptions\JsonValidationException;
 
 class AuthServiceProvider extends AbstractServiceProvider
 {
@@ -36,50 +36,50 @@ class AuthServiceProvider extends AbstractServiceProvider
     protected function bindRequests()
     {
         $this->app->bind(
-            \RLuders\JWTAuth\Http\Requests\TokenRequest::class,
+            \Efficon\JWTAuth\Http\Requests\TokenRequest::class,
             function ($app) {
-                return new \RLuders\JWTAuth\Http\Requests\TokenRequest(input());
+                return new \Efficon\JWTAuth\Http\Requests\TokenRequest(input());
             }
         );
 
         $this->app->bind(
-            \RLuders\JWTAuth\Http\Requests\LoginRequest::class,
+            \Efficon\JWTAuth\Http\Requests\LoginRequest::class,
             function ($app) {
-                return new \RLuders\JWTAuth\Http\Requests\LoginRequest(input());
+                return new \Efficon\JWTAuth\Http\Requests\LoginRequest(input());
             }
         );
 
         $this->app->bind(
-            \RLuders\JWTAuth\Http\Requests\ActivationRequest::class,
+            \Efficon\JWTAuth\Http\Requests\ActivationRequest::class,
             function ($app) {
-                return new \RLuders\JWTAuth\Http\Requests\ActivationRequest(input());
+                return new \Efficon\JWTAuth\Http\Requests\ActivationRequest(input());
             }
         );
 
         $this->app->bind(
-            \RLuders\JWTAuth\Http\Requests\ForgotPasswordRequest::class,
+            \Efficon\JWTAuth\Http\Requests\ForgotPasswordRequest::class,
             function ($app) {
-                return new \RLuders\JWTAuth\Http\Requests\ForgotPasswordRequest(input());
+                return new \Efficon\JWTAuth\Http\Requests\ForgotPasswordRequest(input());
             }
         );
 
         $this->app->bind(
-            \RLuders\JWTAuth\Http\Requests\RegisterRequest::class,
+            \Efficon\JWTAuth\Http\Requests\RegisterRequest::class,
             function ($app) {
-                return new \RLuders\JWTAuth\Http\Requests\RegisterRequest(input());
+                return new \Efficon\JWTAuth\Http\Requests\RegisterRequest(input());
             }
         );
 
         $this->app->bind(
-            \RLuders\JWTAuth\Http\Requests\ResetPasswordRequest::class,
+            \Efficon\JWTAuth\Http\Requests\ResetPasswordRequest::class,
             function ($app) {
-                return new \RLuders\JWTAuth\Http\Requests\ResetPasswordRequest(input());
+                return new \Efficon\JWTAuth\Http\Requests\ResetPasswordRequest(input());
             }
         );
 
         // Resolving the bindings above and validating it
         $this->app->resolving(
-            \RLuders\JWTAuth\Http\Requests\Request::class,
+            \Efficon\JWTAuth\Http\Requests\Request::class,
             function ($request, $app) {
                 $request->validate();
             }
@@ -95,7 +95,7 @@ class AuthServiceProvider extends AbstractServiceProvider
     {
         // Some of default values that doesn't need to be configured by
         // the user are included on this file
-        Config::set('jwt', Config::get('rluders.jwtauth::jwt'));
+        Config::set('jwt', Config::get('efficon.jwtauth::jwt'));
 
         $attributes = PluginSettings::instance()->attributes;
         foreach ($attributes as $attr => $value) {

@@ -1,9 +1,9 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Efficon\JWTAuth\Http\Controllers;
 
 use Illuminate\Http\Response;
-use RLuders\JWTAuth\Classes\JWTAuth;
+use Efficon\JWTAuth\Classes\JWTAuth;
 use Illuminate\Routing\Controller;
 
 class GetUserController extends Controller

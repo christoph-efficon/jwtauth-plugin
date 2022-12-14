@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers\Traits;
+namespace Efficon\JWTAuth\Http\Controllers\Traits;
 
 use Mail;
 

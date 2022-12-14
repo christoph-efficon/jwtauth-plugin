@@ -22,7 +22,7 @@ return [
         |
         */
 
-        'jwt' => Tymon\JWTAuth\Providers\JWT\Namshi::class,
+        'jwt' => PHPOpenSourceSaver\JWTAuth\Providers\JWT\Namshi::class,
 
         /*
         |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ return [
         |
         */
 
-        'auth' => RLuders\JWTAuth\Classes\AuthAdapter::class,
+        'auth' => Efficon\JWTAuth\Classes\AuthAdapter::class,
 
         /*
         |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ return [
         |
         */
 
-        'storage' => Tymon\JWTAuth\Providers\Storage\Illuminate::class,
+        'storage' => PHPOpenSourceSaver\JWTAuth\Providers\Storage\Illuminate::class,
 
     ],
 

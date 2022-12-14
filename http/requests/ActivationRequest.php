@@ -1,8 +1,8 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Requests;
+namespace Efficon\JWTAuth\Http\Requests;
 
-use RLuders\JWTAuth\Http\Requests\Request;
+use Efficon\JWTAuth\Http\Requests\Request;
 
 class ActivationRequest extends Request
 {

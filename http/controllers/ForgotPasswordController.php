@@ -1,15 +1,15 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Efficon\JWTAuth\Http\Controllers;
 
 use Mail;
 use Illuminate\Http\Response;
-use RLuders\JWTAuth\Models\User;
-use RLuders\JWTAuth\Models\Settings;
+use Efficon\JWTAuth\Models\User;
+use Efficon\JWTAuth\Models\Settings;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Http\Requests\ForgotPasswordRequest;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanSendMail;
+use Efficon\JWTAuth\Http\Requests\ForgotPasswordRequest;
+use Efficon\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
+use Efficon\JWTAuth\Http\Controllers\Traits\CanSendMail;
 
 class ForgotPasswordController extends Controller
 {

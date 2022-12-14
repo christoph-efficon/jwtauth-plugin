@@ -1,9 +1,9 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Requests;
+namespace Efficon\JWTAuth\Http\Requests;
 
-use RLuders\JWTAuth\Http\Requests\Request;
-use RLuders\JWTAuth\Http\Requests\Traits\CheckLoginAttribute;
+use Efficon\JWTAuth\Http\Requests\Request;
+use Efficon\JWTAuth\Http\Requests\Traits\CheckLoginAttribute;
 
 class LoginRequest extends Request
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Exceptions;
+namespace Efficon\JWTAuth\Exceptions;
 
 use Illuminate\Http\Response;
 use InvalidArgumentException;

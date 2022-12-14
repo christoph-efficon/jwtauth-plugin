@@ -1,11 +1,11 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Efficon\JWTAuth\Http\Controllers;
 
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Classes\JWTAuth;
-use RLuders\JWTAuth\Http\Requests\ActivationRequest;
+use Efficon\JWTAuth\Classes\JWTAuth;
+use Efficon\JWTAuth\Http\Requests\ActivationRequest;
 
 class ActivateController extends Controller
 {
