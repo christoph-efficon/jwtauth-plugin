@@ -13,7 +13,7 @@ return [
     |
     */
     'defaults' => [
-        'guard' => env('AUTH_DEFAULT_GUARD', 'web'),
+        'guard' => env('AUTH_DEFAULT_GUARD', 'api'),
         'passwords' => env('AUTH_DEFAULT_PASSWORDS', 'users'),
     ],
     /*
