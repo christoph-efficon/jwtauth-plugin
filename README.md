@@ -36,7 +36,10 @@ This plugin provides a JSON Web Tokens authentication mechanism for [OctoberCMS]
 
 # Installation
 
-Yes, you can install it from the repository (but I'll not provide a documentation for that - in this case I'll assume that you know what you are doing). I strongly recommend that you install it from [product page](https://octobercms.com/plugin/efficon-jwtauth) inside the OctoberCMS Marketplace.
+In difference to the original package the dependency of tymon/jwt is replaced by phpopensourcesaver/jwt-auth. 
+Installation through composer possible by manually specifing package as repository. 
+After installation you need to publish the op
+
 
 # Configuration
 
