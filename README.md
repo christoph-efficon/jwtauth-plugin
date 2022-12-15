@@ -2,22 +2,11 @@
   <img src="https://octobercms.com/storage/app/uploads/public/58b/8a6/0b5/58b8a60b50133737978501.png" style="border:1px solid #ddd;width:auto;">
 </p>
 
-<p align="center">
-  <a href="https://travis-ci.org/efficon/oc-jwtauth-plugin">
-    <img src="https://travis-ci.org/efficon/oc-jwtauth-plugin.svg?branch=main">
-  </a>
-  <a href="https://octobercms.com/plugin/efficon-jwtauth">
-    <img src="https://img.shields.io/badge/OctoberCMS-Plugin-%23EE7203.svg">
-  </a>
-  <a href="https://www.patreon.com/efficon">
-    <img src="https://img.shields.io/badge/Support_on-Patreon-green.svg">
-  </a>
-  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-    <img src="https://img.shields.io/github/license/efficon/oc-jwtauth-plugin.svg">
-  </a>
-</p>
 
 # Introduction
+
+Original Package by RLuders.
+This package was forked to add support for the newest version of OctoberCMS (3.0) and replace the dependency of tymon/jwt.
 
 This plugin provides a JSON Web Tokens authentication mechanism for [OctoberCMS](http://www.octobercms.com) integrated with RainLab.User. It's essential for your web application built with Angular, Vue.js, React or other modern Javascript frameworks.
 
@@ -36,10 +25,7 @@ This plugin provides a JSON Web Tokens authentication mechanism for [OctoberCMS]
 
 # Installation
 
-In difference to the original package the dependency of tymon/jwt is replaced by phpopensourcesaver/jwt-auth. 
-Installation through composer possible by manually specifing package as repository. 
-After installation you need to publish the op
-
+For installation add this package manually to composer.json repositories and use dev-main as version constraint.
 
 # Configuration
 
