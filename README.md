@@ -13,7 +13,6 @@ This plugin provides a JSON Web Tokens authentication mechanism for [OctoberCMS]
 ## Requirements
 
 - [RainLab.User](https://github.com/rainlab/user-plugin) plugin
-- [Efficon.CORS](https://octobercms.com/plugin/efficon-cors) plugin (optional, but recommended)
 
 ## Theme
 
